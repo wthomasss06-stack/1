@@ -1,0 +1,3070 @@
+﻿
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+
+<!-- Optimisation mobile -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Découvrez TechFlow Electronics, leader des solutions électroniques en Côte d'Ivoire. Installation solaire, domotique, maintenance 24/7.">
+    <meta name="keywords" content="électronique, solaire, domotique, Côte d'Ivoire, Abidjan, installation électrique, maintenance">
+    <meta name="author" content="TechFlow Electronics">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:title" content="TechFlow Electronics - Solutions Électroniques Premium">
+    <meta property="og:description" content="Des solutions intelligentes et durables pour transformer votre quotidien">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="./">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TechFlow Electronics">
+    <meta name="twitter:description" content="Solutions électroniques innovantes en Côte d'Ivoire">
+    
+    <title>Accueil - TechFlow Electronics</title>
+    <!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="./static/images/favicon.svg">
+<link rel="alternate icon" href="./static/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="./static/images/apple-touch-icon.png">
+<link rel="manifest" href="./static/site.webmanifest">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF1B2D',
+                        secondary: '#7B00D3',
+                        dark: '#0A0A0A',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+    
+    * {
+        font-family: 'Inter', sans-serif;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /* ===== VARIABLES CSS POUR DARK/LIGHT MODE ===== */
+    :root {
+        /* Backgrounds */
+        --bg-primary: #0A0A0A;
+        --bg-secondary: #000000;
+        --bg-tertiary: #1a1a1a;
+        --bg-card: #1f2937;
+        --bg-card-hover: #374151;
+        
+        /* Textes */
+        --text-primary: #ffffff;
+        --text-secondary: #9ca3af;
+        --text-tertiary: #6b7280;
+        
+        /* Bordures */
+        --border-color: #374151;
+        --border-light: #4b5563;
+        
+        /* Glass effect */
+        --glass-bg: rgba(255, 255, 255, 0.1);
+        --glass-border: rgba(255, 255, 255, 0.2);
+        
+        /* Shadows */
+        --shadow: rgba(0, 0, 0, 0.3);
+    }
+    
+    [data-theme="light"] {
+        /* Backgrounds */
+        --bg-primary: #ffffff;
+        --bg-secondary: #f9fafb;
+        --bg-tertiary: #f3f4f6;
+        --bg-card: #ffffff;
+        --bg-card-hover: #f9fafb;
+        
+        /* Textes */
+        --text-primary: #0A0A0A;
+        --text-secondary: #4b5563;
+        --text-tertiary: #6b7280;
+        
+        /* Bordures */
+        --border-color: #e5e7eb;
+        --border-light: #d1d5db;
+        
+        /* Glass effect */
+        --glass-bg: rgba(0, 0, 0, 0.05);
+        --glass-border: rgba(0, 0, 0, 0.1);
+        
+        /* Shadows */
+        --shadow: rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Application des variables */
+    body {
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    /* ===== CLASSES RÉUTILISABLES ===== */
+    .bg-dark {
+        background-color: var(--bg-primary) !important;
+    }
+    
+    .bg-black {
+        background-color: var(--bg-secondary) !important;
+    }
+    
+    .bg-gray-900 {
+        background-color: var(--bg-card) !important;
+    }
+    
+    .bg-gray-800 {
+        background-color: var(--bg-tertiary) !important;
+    }
+    
+    .text-white {
+        color: var(--text-primary) !important;
+    }
+    
+    .text-gray-300 {
+        color: var(--text-secondary) !important;
+    }
+    
+    .text-gray-400 {
+        color: var(--text-secondary) !important;
+    }
+    
+    .text-gray-500 {
+        color: var(--text-tertiary) !important;
+    }
+    
+    .border-gray-800 {
+        border-color: var(--border-color) !important;
+    }
+    
+    .border-gray-900 {
+        border-color: var(--border-light) !important;
+    }
+    
+    /* Glass effect */
+    .glass {
+        background: var(--glass-bg) !important;
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--glass-border) !important;
+    }
+    
+    /* Gradient (reste identique) */
+    .gradient-text {
+        background: linear-gradient(135deg, #FF1B2D 0%, #7B00D3 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    .gradient-bg {
+        background: linear-gradient(135deg, #FF1B2D 0%, #7B00D3 100%);
+    }
+    
+    /* ===== SECTIONS SPÉCIFIQUES ===== */
+    
+    /* Hero sections avec gradient */
+    section[class*="gradient"] {
+        position: relative;
+    }
+    
+    section .absolute.inset-0 {
+        background-color: var(--bg-secondary);
+    }
+    
+    /* Cards et conteneurs */
+    .bg-gradient-to-br {
+        background: linear-gradient(to bottom right, var(--bg-card), var(--bg-secondary)) !important;
+    }
+    
+    .bg-gradient-to-b {
+        background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary)) !important;
+    }
+    
+    /* Navbar */
+    #navbar {
+        color: var(--text-primary);
+    }
+    
+    .navbar-scrolled {
+        background: var(--bg-primary) !important;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 4px 30px var(--shadow);
+    }
+    
+    /* Menu mobile */
+    #mobile-menu {
+        background: var(--bg-primary) !important;
+        border-color: var(--border-color) !important;
+    }
+    
+    /* Footer */
+    footer {
+        background-color: var(--bg-secondary) !important;
+        border-top-color: var(--border-color) !important;
+    }
+    
+    /* Hover effects */
+    .hover\:bg-primary:hover {
+        background-color: #FF1B2D !important;
+    }
+    
+    .hover\:bg-gray-700:hover {
+        background-color: var(--bg-card-hover) !important;
+    }
+    
+    .hover\:text-white:hover {
+        color: var(--text-primary) !important;
+    }
+    
+    .hover\:text-primary:hover {
+        color: #FF1B2D !important;
+    }
+    
+    .hover\:border-primary:hover {
+        border-color: #FF1B2D !important;
+    }
+    
+    /* ===== ANIMATIONS ===== */
+    .animate-float {
+        animation: float 6s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+    }
+    
+    .hover-scale {
+        transition: transform 0.3s ease;
+    }
+    
+    .hover-scale:hover {
+        transform: scale(1.05);
+    }
+    
+    .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /* ===== THEME SWITCH ===== */
+    .theme-switch {
+        position: relative;
+        width: 60px;
+        height: 30px;
+        background: var(--bg-tertiary);
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    
+    .theme-switch-slider {
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 24px;
+        height: 24px;
+        background: linear-gradient(135deg, #FF1B2D, #7B00D3);
+        border-radius: 50%;
+        transition: transform 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 12px;
+    }
+    
+    [data-theme="light"] .theme-switch-slider {
+        transform: translateX(30px);
+    }
+    
+    /* ===== LOADER ===== */
+    #page-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    
+    #page-loader.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .loader-logo {
+        width: 120px;
+        height: 120px;
+        position: relative;
+        animation: pulse 2s ease-in-out infinite;
+    }
+    
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+            filter: drop-shadow(0 0 20px rgba(255, 27, 45, 0.5));
+        }
+        50% {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 40px rgba(123, 0, 211, 0.8));
+        }
+    }
+    
+    .electric-effect {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    .electric-bolt {
+        position: absolute;
+        width: 2px;
+        height: 30px;
+        background: linear-gradient(to bottom, rgba(255, 27, 45, 0), #FF1B2D, rgba(255, 27, 45, 0));
+        animation: electricBolt 1.5s ease-in-out infinite;
+        opacity: 0;
+    }
+    
+    .electric-bolt:nth-child(1) {
+        top: -30px;
+        left: 30%;
+        animation-delay: 0s;
+    }
+    
+    .electric-bolt:nth-child(2) {
+        top: -30px;
+        right: 30%;
+        animation-delay: 0.3s;
+    }
+    
+    .electric-bolt:nth-child(3) {
+        bottom: -30px;
+        left: 40%;
+        animation-delay: 0.6s;
+        background: linear-gradient(to bottom, rgba(123, 0, 211, 0), #7B00D3, rgba(123, 0, 211, 0));
+    }
+    
+    .electric-bolt:nth-child(4) {
+        bottom: -30px;
+        right: 40%;
+        animation-delay: 0.9s;
+        background: linear-gradient(to bottom, rgba(123, 0, 211, 0), #7B00D3, rgba(123, 0, 211, 0));
+    }
+    
+    @keyframes electricBolt {
+        0%, 100% {
+            opacity: 0;
+            transform: translateY(0);
+        }
+        50% {
+            opacity: 1;
+            transform: translateY(20px);
+        }
+    }
+    
+    .energy-ring {
+        position: absolute;
+        border: 2px solid;
+        border-radius: 50%;
+        animation: expandRing 2s ease-out infinite;
+    }
+    
+    .energy-ring:nth-child(1) {
+        width: 100px;
+        height: 100px;
+        border-color: rgba(255, 27, 45, 0.3);
+        animation-delay: 0s;
+    }
+    
+    .energy-ring:nth-child(2) {
+        width: 100px;
+        height: 100px;
+        border-color: rgba(123, 0, 211, 0.3);
+        animation-delay: 0.5s;
+    }
+    
+    .energy-ring:nth-child(3) {
+        width: 100px;
+        height: 100px;
+        border-color: rgba(255, 27, 45, 0.2);
+        animation-delay: 1s;
+    }
+    
+    @keyframes expandRing {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(2.5);
+            opacity: 0;
+        }
+    }
+    
+    .loader-text {
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: 600;
+        background: linear-gradient(135deg, #FF1B2D, #7B00D3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: fadeInOut 2s ease-in-out infinite;
+    }
+    
+    @keyframes fadeInOut {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 1; }
+    }
+    
+    .loader-progress {
+        width: 200px;
+        height: 3px;
+        background: var(--bg-tertiary);
+        border-radius: 10px;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    
+    .loader-progress-bar {
+        height: 100%;
+        background: linear-gradient(90deg, #FF1B2D, #7B00D3);
+        animation: loadingProgress 2s ease-in-out infinite;
+        border-radius: 10px;
+    }
+    
+    @keyframes loadingProgress {
+        0% { width: 0%; }
+        50% { width: 70%; }
+        100% { width: 100%; }
+    }
+    
+    /* ===== INPUTS ET FORMULAIRES ===== */
+    input, textarea, select {
+        background-color: var(--bg-card) !important;
+        color: var(--text-primary) !important;
+        border-color: var(--border-color) !important;
+    }
+    
+    input:focus, textarea:focus, select:focus {
+        border-color: #FF1B2D !important;
+    }
+    
+    /* ===== OMBRES ===== */
+    .shadow-lg, .shadow-xl, .shadow-2xl {
+        box-shadow: 0 10px 40px var(--shadow) !important;
+    }
+    
+    /* ===== MODE CLAIR - AJUSTEMENTS SPÉCIAUX ===== */
+    [data-theme="light"] .bg-primary\/20 {
+        background-color: rgba(255, 27, 45, 0.1) !important;
+    }
+    
+    [data-theme="light"] .bg-primary\/10 {
+        background-color: rgba(255, 27, 45, 0.05) !important;
+    }
+    
+    [data-theme="light"] .text-primary {
+        color: #FF1B2D !important;
+    }
+    
+    /* Boutons sociaux en mode clair */
+    [data-theme="light"] .bg-gray-900 {
+        background-color: #e5e7eb !important;
+    }
+    
+    [data-theme="light"] .bg-gray-900:hover {
+        background-color: #FF1B2D !important;
+        color: white !important;
+    }
+    /* Badge "Nouveau" */
+    [data-theme="light"] .glass {
+        background: rgba(0, 0, 0, 0.05) !important;
+        border: 1px solid rgba(0, 0, 0, 0.1) !important;
+        color: var(--text-primary) !important;
+    }
+    
+    /* Si tu veux que le texte du badge soit visible en mode clair */
+    [data-theme="light"] .glass span {
+        color: #1f2937 !important;
+    }
+    
+    /* Texte gris en mode clair */
+    [data-theme="light"] .text-gray-200 {
+        color: #4b5563 !important;
+    }
+    
+    [data-theme="light"] .text-gray-300 {
+        color: #6b7280 !important;
+    }
+
+
+
+    /* ===== HERO SECTION AVEC IMAGE DE FOND ===== */
+
+/* Container principal du hero */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 5rem;
+}
+
+/* Image de fond avec effet parallaxe */
+.hero-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    animation: slowZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes slowZoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Overlays pour meilleure lisibilité */
+.hero-overlay-dark {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, 
+        rgba(0, 0, 0, 0.7) 0%, 
+        rgba(0, 0, 0, 0.6) 50%, 
+        rgba(0, 0, 0, 0.8) 100%
+    );
+    z-index: 1;
+}
+
+.hero-overlay-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, 
+        rgba(255, 27, 45, 0.2) 0%, 
+        transparent 50%, 
+        rgba(123, 0, 211, 0.2) 100%
+    );
+    z-index: 2;
+}
+
+/* Effet de vignette sur les bords */
+.hero-vignette {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        ellipse at center,
+        transparent 0%,
+        rgba(0, 0, 0, 0.4) 100%
+    );
+    z-index: 3;
+}
+
+/* Particules animées */
+.hero-particles {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.hero-particle {
+    position: absolute;
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero-particle:nth-child(1) {
+    top: 25%;
+    left: 25%;
+    width: 8px;
+    height: 8px;
+    background: #FF1B2D;
+    animation-delay: 0s;
+}
+
+.hero-particle:nth-child(2) {
+    top: 33%;
+    right: 25%;
+    width: 12px;
+    height: 12px;
+    background: #7B00D3;
+    animation-delay: 2s;
+}
+
+.hero-particle:nth-child(3) {
+    bottom: 25%;
+    left: 33%;
+    width: 8px;
+    height: 8px;
+    background: #FF1B2D;
+    animation-delay: 4s;
+}
+
+/* Contenu du hero */
+.hero-content {
+    position: relative;
+    z-index: 20;
+}
+
+/* Badge "Nouveau" */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-badge-pulse {
+    width: 8px;
+    height: 8px;
+    background: #4ade80;
+    border-radius: 50%;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Titre principal avec effet de texte */
+.hero-title {
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+/* Texte avec gradient */
+.hero-gradient-text {
+    background: linear-gradient(135deg, #FF1B2D 0%, #7B00D3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+/* Sous-titre */
+.hero-subtitle {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 48rem;
+    margin: 0 auto 3rem;
+    animation: fadeInUp 0.8s ease-out 0.4s backwards;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
+}
+
+/* Boutons CTA */
+.hero-cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    animation: fadeInUp 0.8s ease-out 0.6s backwards;
+}
+
+@media (min-width: 640px) {
+    .hero-cta-container {
+        flex-direction: row;
+    }
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.hero-btn-primary {
+    background: linear-gradient(135deg, #FF1B2D 0%, #7B00D3 100%);
+    color: white;
+}
+
+.hero-btn-primary:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+    box-shadow: 0 15px 50px rgba(255, 27, 45, 0.4);
+}
+
+.hero-btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.hero-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Stats section */
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 48rem;
+    margin: 0 auto;
+    animation: fadeInUp 0.8s ease-out 0.8s backwards;
+}
+
+.hero-stat-item {
+    text-align: center;
+}
+
+.hero-stat-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #FF1B2D 0%, #7B00D3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
+}
+
+.hero-stat-label {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Scroll indicator */
+.hero-scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    animation: bounce 2s infinite;
+}
+
+.hero-scroll-indicator i {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Animation fadeInUp */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation bounce */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+/* Animation pulse */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+        min-height: auto;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .hero-stat-value {
+        font-size: 2rem;
+    }
+    
+    .hero-btn {
+        width: 100%;
+        padding: 0.875rem 1.5rem;
+    }
+    
+    /* Désactiver le zoom de l'image sur mobile */
+    .hero-background img {
+        animation: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-badge {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+    
+    .hero-particle {
+        display: none; /* Cacher les particules sur très petits écrans */
+    }
+}
+
+/* ===== MODE CLAIR ===== */
+
+[data-theme="light"] .hero-overlay-dark {
+    background: linear-gradient(to bottom, 
+        rgba(255, 255, 255, 0.85) 0%, 
+        rgba(255, 255, 255, 0.75) 50%, 
+        rgba(255, 255, 255, 0.9) 100%
+    );
+}
+
+[data-theme="light"] .hero-subtitle {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+[data-theme="light"] .hero-stat-label {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="light"] .hero-badge {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .hero-btn-secondary {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #0A0A0A;
+}
+
+[data-theme="light"] .hero-btn-secondary:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .hero-scroll-indicator i {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* ===== OPTIMISATIONS PERFORMANCE ===== */
+
+/* Améliorer les performances des animations */
+.hero-background img,
+.hero-particle,
+.hero-badge,
+.hero-title,
+.hero-subtitle {
+    will-change: transform;
+}
+
+/* Préférence de mouvement réduit */
+@media (prefers-reduced-motion: reduce) {
+    .hero-background img,
+    .hero-particle,
+    .hero-badge,
+    .hero-title,
+    .hero-subtitle,
+    .hero-scroll-indicator {
+        animation: none !important;
+    }
+    
+    .hero-btn:hover {
+        transform: none !important;
+    }
+}
+
+
+
+
+
+/* ===== NOUVEAU CARROUSEL DE PROJETS ===== */
+
+.projects-carousel {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.project-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+}
+
+.project-slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+.project-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Overlay avec gradient */
+.slide-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.95) 0%,
+        rgba(0, 0, 0, 0.7) 50%,
+        transparent 100%
+    );
+    padding: 3rem 2rem 2rem;
+    z-index: 2;
+}
+
+.slide-content {
+    max-width: 800px;
+}
+
+/* Badge du projet */
+.slide-badge {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-primary {
+    background: linear-gradient(135deg, #FF1B2D, #ff4757);
+    color: white;
+}
+
+.badge-secondary {
+    background: linear-gradient(135deg, #7B00D3, #9b59b6);
+    color: white;
+}
+
+/* Titre du projet */
+.slide-title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+}
+
+/* Description */
+.slide-description {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+/* 🎮 Boutons de navigation */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.carousel-nav:hover {
+    background: linear-gradient(135deg, #FF1B2D, #7B00D3);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 8px 25px rgba(255, 27, 45, 0.4);
+}
+
+.carousel-prev {
+    left: 1.5rem;
+}
+
+.carousel-next {
+    right: 1.5rem;
+}
+
+/* 📍 Indicateurs (dots) */
+.carousel-dots {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.75rem;
+    z-index: 10;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.dot.active {
+    width: 32px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #FF1B2D, #7B00D3);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+    .carousel-wrapper {
+        height: 400px;
+    }
+
+    .slide-overlay {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+
+    .slide-title {
+        font-size: 1.5rem;
+    }
+
+    .slide-description {
+        font-size: 0.95rem;
+    }
+
+    .carousel-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .carousel-prev {
+        left: 1rem;
+    }
+
+    .carousel-next {
+        right: 1rem;
+    }
+
+    .carousel-dots {
+        bottom: 1rem;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .dot.active {
+        width: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-wrapper {
+        height: 350px;
+    }
+
+    .slide-title {
+        font-size: 1.25rem;
+    }
+
+    .slide-description {
+        font-size: 0.875rem;
+    }
+}
+
+/* ===== MODE CLAIR ===== */
+
+[data-theme="light"] .projects-carousel {
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .slide-overlay {
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.98) 0%,
+        rgba(255, 255, 255, 0.85) 50%,
+        transparent 100%
+    );
+}
+
+[data-theme="light"] .slide-title {
+    color: #0A0A0A;
+}
+
+[data-theme="light"] .slide-description {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+[data-theme="light"] .carousel-nav {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.15);
+    color: #0A0A0A;
+}
+
+[data-theme="light"] .carousel-nav:hover {
+    background: linear-gradient(135deg, #FF1B2D, #7B00D3);
+    color: white;
+}
+
+[data-theme="light"] .dot {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] .dot:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+    /* ===== CAROUSEL - VERSION CORRIGÃe ===== */
+#carousel {
+    position: relative;
+    width: 100%;
+}
+
+#carousel-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 0;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Forcer l'affichage du premier slide au chargement */
+.carousel-slide:first-child {
+    opacity: 1 !important;
+    z-index: 1 !important;
+}
+
+
+
+
+    
+    /* Container responsive */
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    @media (min-width: 640px) {
+        .container { max-width: 640px; }
+    }
+    
+    @media (min-width: 768px) {
+        .container { max-width: 768px; }
+    }
+    
+    @media (min-width: 1024px) {
+        .container { max-width: 1024px; }
+    }
+    
+    @media (min-width: 1280px) {
+        .container { max-width: 1280px; }
+    }
+    
+    /* ===== NAVBAR RESPONSIVE ===== */
+    @media (max-width: 768px) {
+        #navbar .container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        #navbar .text-2xl {
+            font-size: 1.25rem;
+        }
+        
+        #navbar img {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+    
+    /* ===== MENU MOBILE ===== */
+    @media (max-width: 768px) {
+        #mobile-menu {
+            max-height: calc(100vh - 80px);
+            overflow-y: auto;
+        }
+        
+        #mobile-menu a {
+            font-size: 0.95rem;
+        }
+    }
+    
+    /* ===== HERO SECTIONS RESPONSIVE ===== */
+    @media (max-width: 768px) {
+        /* Titres hero */
+        .text-5xl { font-size: 2rem !important; }
+        .text-6xl { font-size: 2.5rem !important; }
+        .text-7xl { font-size: 3rem !important; }
+        .text-8xl { font-size: 3.5rem !important; }
+        
+        /* Sous-titres */
+        .text-xl { font-size: 1rem !important; }
+        .text-2xl { font-size: 1.25rem !important; }
+        
+        /* Padding des sections */
+        .py-32 { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+        .py-20 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+        .py-16 { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+        
+        /* Hero min-height */
+        .min-h-screen { min-height: auto !important; padding-top: 6rem; padding-bottom: 4rem; }
+        section[class*="min-h-"] { min-height: auto !important; padding-top: 5rem; padding-bottom: 3rem; }
+    }
+    
+    /* ===== BOUTONS RESPONSIVE ===== */
+    @media (max-width: 640px) {
+        .px-10 { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+        .px-8 { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
+        .py-5 { padding-top: 0.875rem !important; padding-bottom: 0.875rem !important; }
+        .py-4 { padding-top: 0.75rem !important; padding-bottom: 0.75rem !important; }
+        
+        /* Boutons en pleine largeur sur mobile */
+        a[class*="rounded-full"].gradient-bg,
+        button[class*="rounded-full"].gradient-bg {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    
+    /* ===== GRILLES RESPONSIVE ===== */
+    @media (max-width: 768px) {
+        /* Force 1 colonne sur mobile */
+        .md\:grid-cols-2,
+        .md\:grid-cols-3,
+        .md\:grid-cols-4,
+        .md\:grid-cols-5 {
+            grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+        }
+        
+        /* Espacement réduit */
+        .gap-12 { gap: 2rem !important; }
+        .gap-8 { gap: 1.5rem !important; }
+        .gap-6 { gap: 1rem !important; }
+    }
+    
+    /* Grilles spéciales (comme les stats 3 colonnes) */
+    @media (max-width: 640px) {
+        .grid-cols-3 {
+            grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+            gap: 1.5rem !important;
+        }
+        
+        .grid-cols-2 {
+            grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+        }
+    }
+    
+    /* ===== CARDS ET CONTENEURS ===== */
+    @media (max-width: 768px) {
+        .p-12 { padding: 2rem !important; }
+        .p-8 { padding: 1.5rem !important; }
+        .p-6 { padding: 1.25rem !important; }
+        
+        .rounded-3xl { border-radius: 1.5rem !important; }
+        .rounded-2xl { border-radius: 1rem !important; }
+        
+        /* Cards glassmorphism */
+        .glass {
+            padding: 1.5rem;
+        }
+    }
+    
+    /* ===== FOOTER RESPONSIVE ===== */
+    @media (max-width: 768px) {
+        footer .grid {
+            grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+            gap: 2rem !important;
+        }
+        
+        footer .md\:col-span-2 {
+            grid-column: span 1 !important;
+        }
+        
+        footer .flex-col {
+            text-align: center;
+        }
+        
+        footer .flex.space-x-4 {
+            justify-content: center;
+        }
+    }
+    
+    /* ===== IMAGES ET MÉDIAS ===== */
+    @media (max-width: 768px) {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .aspect-video {
+            aspect-ratio: 16 / 9;
+        }
+        
+        /* Logos */
+        .w-16 { width: 3rem !important; height: 3rem !important; }
+        .w-12 { width: 2.5rem !important; height: 2.5rem !important; }
+    }
+    
+    /* ===== ESPACEMENTS RESPONSIVE ===== */
+    @media (max-width: 768px) {
+        .space-x-8 > * + * { margin-left: 1rem !important; }
+        .space-x-6 > * + * { margin-left: 0.75rem !important; }
+        .space-x-4 > * + * { margin-left: 0.5rem !important; }
+        
+        .space-y-8 > * + * { margin-top: 1.5rem !important; }
+        .space-y-6 > * + * { margin-top: 1rem !important; }
+        
+        .mb-16 { margin-bottom: 2.5rem !important; }
+        .mb-12 { margin-bottom: 2rem !important; }
+        .mb-8 { margin-bottom: 1.5rem !important; }
+    }
+    
+    /* ===== TEXTES RESPONSIVE ===== */
+    @media (max-width: 768px) {
+        .text-4xl { font-size: 1.75rem !important; }
+        .text-3xl { font-size: 1.5rem !important; }
+        
+        .leading-tight { line-height: 1.3 !important; }
+        .leading-relaxed { line-height: 1.6 !important; }
+        
+        /* Centrer les textes sur mobile */
+        h1, h2 {
+            text-align: center;
+        }
+    }
+    
+    /* ===== FORMULAIRES RESPONSIVE ===== */
+    @media (max-width: 640px) {
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            font-size: 16px !important; /* Évite le zoom sur iOS */
+        }
+        
+        /* Formulaires en colonne sur mobile */
+        .sm\:flex-row {
+            flex-direction: column !important;
+        }
+        
+        .max-w-2xl,
+        .max-w-3xl,
+        .max-w-4xl,
+        .max-w-5xl {
+            max-width: 100% !important;
+        }
+    }
+    
+    /* ===== LOADER RESPONSIVE ===== */
+    @media (max-width: 768px) {
+        .loader-logo {
+            width: 80px !important;
+            height: 80px !important;
+        }
+        
+        .loader-text {
+            font-size: 14px !important;
+        }
+        
+        .loader-progress {
+            width: 150px !important;
+        }
+        
+        .energy-ring {
+            width: 70px !important;
+            height: 70px !important;
+        }
+    }
+    
+    /* ===== MESSAGES RESPONSIVE ===== */
+    @media (max-width: 640px) {
+        .fixed.top-24 {
+            top: 5rem !important;
+            right: 1rem !important;
+            left: 1rem !important;
+        }
+        
+        .glass.max-w-md {
+            max-width: 100% !important;
+        }
+    }
+    
+    /* ===== BADGES ET TAGS ===== */
+    @media (max-width: 640px) {
+        .px-6.py-3.rounded-full {
+            padding: 0.5rem 1rem !important;
+            font-size: 0.875rem !important;
+        }
+        
+        .px-4.py-2.rounded-full {
+            padding: 0.375rem 0.75rem !important;
+            font-size: 0.8rem !important;
+        }
+    }
+    
+    /* ===== FLEX RESPONSIVE ===== */
+    @media (max-width: 768px) {
+        .md\:flex-row {
+            flex-direction: column !important;
+        }
+        
+        .md\:justify-between {
+            justify-content: center !important;
+            text-align: center;
+        }
+        
+        .md\:items-center {
+            align-items: center !important;
+        }
+    }
+    
+    /* ===== SECTIONS SPÉCIFIQUES ===== */
+    
+    /* Stats section */
+    @media (max-width: 640px) {
+        .grid-cols-4 {
+            grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+            gap: 1rem !important;
+        }
+    }
+    
+    /* Services cards */
+    @media (max-width: 768px) {
+        .hover-scale {
+            transform: none !important;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.02) !important;
+        }
+    }
+    
+    /* Testimonials */
+    @media (max-width: 768px) {
+        .w-32.h-32 {
+            width: 4rem !important;
+            height: 4rem !important;
+        }
+    }
+    
+    /* Blog cards */
+    @media (max-width: 768px) {
+        .h-48 {
+            height: 12rem !important;
+        }
+    }
+    
+    /* ===== OPTIMISATIONS TACTILES ===== */
+    @media (hover: none) {
+        /* Désactiver les effets hover sur tactile */
+        .hover\:scale-105:hover,
+        .hover-scale:hover {
+            transform: none !important;
+        }
+        
+        /* Augmenter les zones tactiles */
+        a, button {
+            min-height: 44px;
+            min-width: 44px;
+        }
+    }
+    
+    /* ===== LANDSCAPE MOBILE ===== */
+    @media (max-width: 768px) and (orientation: landscape) {
+        .min-h-screen {
+            min-height: auto !important;
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+        }
+        
+        .py-20 {
+            padding-top: 2rem !important;
+            padding-bottom: 2rem !important;
+        }
+    }
+    
+    /* ===== TABLETTES (768px - 1024px) ===== */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .text-7xl { font-size: 4rem !important; }
+        .text-6xl { font-size: 3.5rem !important; }
+        .text-5xl { font-size: 3rem !important; }
+        
+        .md\:grid-cols-3 {
+            grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        }
+        
+        .md\:grid-cols-4 {
+            grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        }
+    }
+    
+    /* ===== PETITS ÉCRANS (< 375px) ===== */
+    @media (max-width: 375px) {
+        .text-5xl { font-size: 1.75rem !important; }
+        .text-6xl { font-size: 2rem !important; }
+        .text-7xl { font-size: 2.5rem !important; }
+        
+        .px-6 { padding-left: 1rem !important; padding-right: 1rem !important; }
+        .px-4 { padding-left: 0.75rem !important; padding-right: 0.75rem !important; }
+        
+        .container {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+        }
+    }
+    
+    /* ===== GRANDS ÉCRANS (> 1536px) ===== */
+    @media (min-width: 1536px) {
+        .container {
+            max-width: 1536px;
+        }
+    }
+    
+    /* ===== PRINT (Impression) ===== */
+    @media print {
+        #navbar,
+        #mobile-menu,
+        footer,
+        #page-loader,
+        .gradient-bg,
+        .theme-switch {
+            display: none !important;
+        }
+        
+        body {
+            background: white !important;
+            color: black !important;
+        }
+        
+        .fade-in {
+            opacity: 1 !important;
+            transform: none !important;
+        }
+    }
+    
+    /* ===== ACCESSIBILITÉ ===== */
+    
+    /* Focus visible pour navigation clavier */
+    @media (prefers-reduced-motion: no-preference) {
+        *:focus-visible {
+            outline: 2px solid #FF1B2D;
+            outline-offset: 2px;
+            border-radius: 0.25rem;
+        }
+    }
+    
+    /* Réduire les animations si demandé */
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+        
+        .animate-float,
+        .loader-logo,
+        .electric-bolt,
+        .energy-ring {
+            animation: none !important;
+        }
+    }
+    
+    /* ===== DÉBORDEMENT TEXTE ===== */
+    @media (max-width: 768px) {
+        h1, h2, h3, h4, h5, h6 {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+        
+        p {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+    }
+    
+    /* ===== SCROLL HORIZONTAL PREVENTION ===== */
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    </style>
+</head>
+<body>
+    <!-- PAGE LOADER -->
+    <div id="page-loader">
+        <div style="position: relative;">
+            <!-- Cercles d'énergie -->
+            <div class="energy-ring"></div>
+            <div class="energy-ring"></div>
+            <div class="energy-ring"></div>
+            
+            <!-- Logo avec effet électrique -->
+            <div class="loader-logo">
+                <img src="./static/images/logo.svg" alt="TechFlow Logo" style="width: 100%; height: 100%;">
+                
+                <!-- Éclairs électriques -->
+                <div class="electric-effect">
+                    <div class="electric-bolt"></div>
+                    <div class="electric-bolt"></div>
+                    <div class="electric-bolt"></div>
+                    <div class="electric-bolt"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Texte de chargement -->
+        <div class="loader-text">Chargement en cours...</div>
+        
+        <!-- Barre de progression -->
+        <div class="loader-progress">
+            <div class="loader-progress-bar"></div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+<div class="flex items-center space-x-3">
+    <img src="./static/images/logo.svg" alt="TechFlow Logo" class="w-10 h-10">
+    <span class="text-2xl font-bold">TechFlow</span>
+</div>
+                
+                <!-- Menu Desktop -->
+                <ul class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <li><a href="./" class="hover:text-primary transition">Accueil</a></li>
+                    <li><a href="./services/" class="hover:text-primary transition">Services</a></li>
+                    <li><a href="./about/" class="hover:text-primary transition">À propos</a></li>
+                    <li><a href="./contact/" class="hover:text-primary transition">Contact</a></li>
+                </ul>
+                
+                <div class="hidden md:flex items-center space-x-4">
+    <!-- Theme Toggle -->
+    <div class="theme-switch" id="theme-toggle" aria-label="Changer de thème">
+        <div class="theme-switch-slider">
+            <i class="fas fa-moon" id="theme-icon"></i>
+        </div>
+    </div>
+    
+    <a href="./contact/" 
+       aria-label="Demander un devis gratuit"
+       class="gradient-bg px-6 py-3 rounded-full font-semibold hover:opacity-90 transition">
+        Demander un devis
+    </a>
+</div>
+                
+                <!-- Menu Mobile Button -->
+                <button id="mobile-menu-button" 
+                        class="md:hidden text-2xl focus:outline-none"
+                        aria-label="Ouvrir le menu mobile">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Mobile -->
+<div id="mobile-menu" class="hidden md:hidden fixed top-20 left-0 right-0 bg-black/95 backdrop-blur-lg border-b border-gray-800 z-40">
+    <div class="container mx-auto px-6 py-4 space-y-4">
+        <a href="./" class="block py-3 hover:text-primary transition border-b border-gray-800">
+            <i class="fas fa-home mr-3"></i>Accueil
+        </a>
+        <a href="./services/" class="block py-3 hover:text-primary transition border-b border-gray-800">
+            <i class="fas fa-cogs mr-3"></i>Services
+        </a>
+        <a href="./about/" class="block py-3 hover:text-primary transition border-b border-gray-800">
+            <i class="fas fa-info-circle mr-3"></i>À propos
+        </a>
+        <a href="./contact/" class="block py-3 hover:text-primary transition border-b border-gray-800">
+            <i class="fas fa-envelope mr-3"></i>Contact
+        </a>
+        
+        <!-- Theme Toggle Mobile -->
+        <div class="flex items-center justify-between py-3 border-b border-gray-800">
+            <span><i class="fas fa-adjust mr-3"></i>Thème</span>
+            <div class="theme-switch" id="theme-toggle-mobile">
+                <div class="theme-switch-slider">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+        </div>
+        
+        <a href="./contact/" class="gradient-bg px-6 py-3 rounded-full font-semibold block text-center mt-4">
+            Demander un devis
+        </a>
+    </div>
+</div>
+
+    <!-- Messages -->
+    
+
+    <!-- Contenu -->
+    <main>
+        
+<!-- Hero Section - Style Opera -->
+<section aria-labelledby="hero-title" class="hero-section">
+    <!-- Image de fond -->
+    <div class="hero-background">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop&q=80" 
+             alt="Technology Background">
+    </div>
+    
+    <!-- Overlays -->
+    <div class="hero-overlay-dark"></div>
+    <div class="hero-overlay-gradient"></div>
+    <div class="hero-vignette"></div>
+    
+    <!-- Particules -->
+    <div class="hero-particles">
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+    </div>
+    
+    <!-- Contenu -->
+    <div class="container mx-auto px-6 hero-content">
+        <div class="max-w-5xl mx-auto text-center">
+            <!-- Badge -->
+            <div class="hero-badge">
+                <span class="hero-badge-pulse"></span>
+                <span>Nouveau : Installation solaire en 24h</span>
+            </div>
+            
+            <!-- Titre -->
+            <h1 id="hero-title" class="hero-title">
+                L'avenir de
+                <span class="hero-gradient-text">l'électronique</span>
+                commence ici
+            </h1>
+            
+            <!-- Sous-titre -->
+            <p class="hero-subtitle">
+                Des solutions intelligentes, durables et innovantes pour transformer votre quotidien. 
+                Rejoignez plus de <span class="text-primary font-bold">10 000 clients</span> satisfaits.
+            </p>
+            
+            <!-- Boutons -->
+            <div class="hero-cta-container">
+                <a href="./contact/" class="hero-btn hero-btn-primary">
+                    <i class="fas fa-rocket mr-2"></i>
+                    Démarrer maintenant
+                </a>
+                <a href="./services/" class="hero-btn hero-btn-secondary">
+                    <i class="fas fa-play-circle mr-2"></i>
+                    Découvrir nos services
+                </a>
+            </div>
+            
+            <!-- Stats -->
+            <div class="hero-stats">
+                
+                <div class="hero-stat-item">
+                    <div class="hero-stat-value">10K+</div>
+                    <div class="hero-stat-label">Clients</div>
+                </div>
+                
+                <div class="hero-stat-item">
+                    <div class="hero-stat-value">98%</div>
+                    <div class="hero-stat-label">Satisfaction</div>
+                </div>
+                
+                <div class="hero-stat-item">
+                    <div class="hero-stat-value">24/7</div>
+                    <div class="hero-stat-label">Support</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scroll indicator -->
+    <div class="hero-scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+<!-- 📋 SECTION HTML À METTRE DANS home.html -->
+<section aria-labelledby="realisations-title" class="py-32 bg-gradient-to-b from-dark to-black">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16 fade-in">
+            <h2 id="realisations-title" class="text-5xl md:text-6xl font-black mb-6">
+                Nos <span class="gradient-text">Réalisations</span>
+            </h2>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                Découvrez quelques-uns de nos projets récents
+            </p>
+        </div>
+
+        <!-- 🎪 CARROUSEL -->
+        <div class="projects-carousel">
+            <div class="carousel-wrapper">
+                <!-- Slide 1 -->
+                <div class="project-slide active">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=600&fit=crop" 
+                         alt="Installation solaire moderne"
+                         loading="lazy">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <span class="slide-badge badge-primary">Énergie Solaire</span>
+                            <h3 class="slide-title">Installation Solaire - Hôtel Ivoire</h3>
+                            <p class="slide-description">
+                                Système photovoltaïque de 50kW, réduction des coûts de 70%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="project-slide">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=600&fit=crop" 
+                         alt="Système domotique intelligent"
+                         loading="lazy">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <span class="slide-badge badge-secondary">Domotique</span>
+                            <h3 class="slide-title">Maison Intelligente - Cocody</h3>
+                            <p class="slide-description">
+                                Automatisation complète : éclairage, climatisation, sécurité
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="project-slide">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&h=600&fit=crop" 
+                         alt="Système de sécurité professionnel"
+                         loading="lazy">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <span class="slide-badge badge-primary">Sécurité</span>
+                            <h3 class="slide-title">Surveillance HD - Centre Commercial</h3>
+                            <p class="slide-description">
+                                32 caméras 4K avec IA, contrôle d'accès biométrique
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="project-slide">
+                    <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=1200&h=600&fit=crop" 
+                         alt="Installation électrique professionnelle"
+                         loading="lazy">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <span class="slide-badge badge-secondary">Installation</span>
+                            <h3 class="slide-title">Réseau Électrique - Immeuble de Bureaux</h3>
+                            <p class="slide-description">
+                                10 étages, 200 points lumineux, conformité totale
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 🎮 Contrôles -->
+            <button class="carousel-nav carousel-prev" aria-label="Projet précédent">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-nav carousel-next" aria-label="Projet suivant">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- 📍 Indicateurs -->
+            <div class="carousel-dots">
+                <button class="dot active" data-slide="0" aria-label="Aller au projet 1"></button>
+                <button class="dot" data-slide="1" aria-label="Aller au projet 2"></button>
+                <button class="dot" data-slide="2" aria-label="Aller au projet 3"></button>
+                <button class="dot" data-slide="3" aria-label="Aller au projet 4"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Premium - NOUVEAU DESIGN -->
+<section aria-labelledby="services-title" class="py-32 bg-black relative overflow-hidden">
+    <!-- Background effect -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+    
+    <div class="container mx-auto px-6 relative z-10">
+        <!-- Titre section -->
+        <div class="text-center mb-20 fade-in">
+            <div class="inline-block px-6 py-3 bg-primary/10 text-primary rounded-full text-sm font-bold mb-6">
+                NOS EXPERTISES
+            </div>
+            <h2 id="services-title" class="text-5xl md:text-6xl font-black mb-6">
+                Services <span class="gradient-text">Premium</span>
+            </h2>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                Des solutions innovantes et sur mesure pour répondre à tous vos besoins électroniques
+            </p>
+        </div>
+        
+        <!-- Grille de services avec nouveau design -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            
+            <div class="group relative fade-in" style="animation-delay: calc(0 * 0.1s);">
+                <!-- Card principale -->
+                <div class="relative h-full bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm p-8 rounded-3xl border border-gray-800 hover:border-primary/50 transition-all duration-500 overflow-hidden">
+                    <!-- Effet de brillance au hover -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/0 via-transparent to-secondary/0 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+                    
+                    <!-- Badge prix (optionnel) -->
+                    <div class="absolute top-6 right-6 px-4 py-2 bg-primary/20 backdrop-blur-sm rounded-full text-xs font-bold text-primary">
+                        À partir de 150000 FCFA
+                    </div>
+                    
+                    <!-- Icône avec effet -->
+                    <div class="relative mb-6">
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+                        <div class="relative w-20 h-20 rounded-2xl gradient-bg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl">
+                            <i class="fas fa-plug text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Contenu -->
+                    <div class="relative">
+                        <h3 class="text-2xl font-bold mb-4 group-hover:text-white transition-colors">
+                            Installation Électrique
+                        </h3>
+                        <p class="text-gray-400 leading-relaxed mb-6 line-clamp-3">
+                            Installation complète de systèmes électriques résidentiels et commerciaux avec garantie
+                        </p>
+                        
+                        <!-- Liste d'avantages (optionnel) -->
+                        <ul class="space-y-2 mb-6 text-sm text-gray-500">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Installation certifiée
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Garantie 2-5 ans
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Support 24/7
+                            </li>
+                        </ul>
+                        
+                        <!-- Bouton -->
+                        <a href="./services/" 
+                           aria-label="En savoir plus sur Installation Électrique"
+                           class="inline-flex items-center text-primary font-bold group/btn">
+                            <span class="mr-2">Découvrir</span>
+                            <i class="fas fa-arrow-right group-hover/btn:translate-x-2 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="group relative fade-in" style="animation-delay: calc(1 * 0.1s);">
+                <!-- Card principale -->
+                <div class="relative h-full bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm p-8 rounded-3xl border border-gray-800 hover:border-primary/50 transition-all duration-500 overflow-hidden">
+                    <!-- Effet de brillance au hover -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/0 via-transparent to-secondary/0 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+                    
+                    <!-- Badge prix (optionnel) -->
+                    <div class="absolute top-6 right-6 px-4 py-2 bg-primary/20 backdrop-blur-sm rounded-full text-xs font-bold text-primary">
+                        À partir de 500000 FCFA
+                    </div>
+                    
+                    <!-- Icône avec effet -->
+                    <div class="relative mb-6">
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+                        <div class="relative w-20 h-20 rounded-2xl gradient-bg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl">
+                            <i class="fas fa-solar-panel text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Contenu -->
+                    <div class="relative">
+                        <h3 class="text-2xl font-bold mb-4 group-hover:text-white transition-colors">
+                            Énergie Solaire
+                        </h3>
+                        <p class="text-gray-400 leading-relaxed mb-6 line-clamp-3">
+                            Solutions photovoltaïques clé en main pour réduire vos coûts énergétiques
+                        </p>
+                        
+                        <!-- Liste d'avantages (optionnel) -->
+                        <ul class="space-y-2 mb-6 text-sm text-gray-500">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Installation certifiée
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Garantie 2-5 ans
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Support 24/7
+                            </li>
+                        </ul>
+                        
+                        <!-- Bouton -->
+                        <a href="./services/" 
+                           aria-label="En savoir plus sur Énergie Solaire"
+                           class="inline-flex items-center text-primary font-bold group/btn">
+                            <span class="mr-2">Découvrir</span>
+                            <i class="fas fa-arrow-right group-hover/btn:translate-x-2 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="group relative fade-in" style="animation-delay: calc(2 * 0.1s);">
+                <!-- Card principale -->
+                <div class="relative h-full bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm p-8 rounded-3xl border border-gray-800 hover:border-primary/50 transition-all duration-500 overflow-hidden">
+                    <!-- Effet de brillance au hover -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/0 via-transparent to-secondary/0 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+                    
+                    <!-- Badge prix (optionnel) -->
+                    <div class="absolute top-6 right-6 px-4 py-2 bg-primary/20 backdrop-blur-sm rounded-full text-xs font-bold text-primary">
+                        À partir de 300000 FCFA
+                    </div>
+                    
+                    <!-- Icône avec effet -->
+                    <div class="relative mb-6">
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+                        <div class="relative w-20 h-20 rounded-2xl gradient-bg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl">
+                            <i class="fas fa-home text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Contenu -->
+                    <div class="relative">
+                        <h3 class="text-2xl font-bold mb-4 group-hover:text-white transition-colors">
+                            Domotique
+                        </h3>
+                        <p class="text-gray-400 leading-relaxed mb-6 line-clamp-3">
+                            Maison intelligente avec contrôle centralisé de tous vos équipements
+                        </p>
+                        
+                        <!-- Liste d'avantages (optionnel) -->
+                        <ul class="space-y-2 mb-6 text-sm text-gray-500">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Installation certifiée
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Garantie 2-5 ans
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Support 24/7
+                            </li>
+                        </ul>
+                        
+                        <!-- Bouton -->
+                        <a href="./services/" 
+                           aria-label="En savoir plus sur Domotique"
+                           class="inline-flex items-center text-primary font-bold group/btn">
+                            <span class="mr-2">Découvrir</span>
+                            <i class="fas fa-arrow-right group-hover/btn:translate-x-2 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="group relative fade-in" style="animation-delay: calc(3 * 0.1s);">
+                <!-- Card principale -->
+                <div class="relative h-full bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm p-8 rounded-3xl border border-gray-800 hover:border-primary/50 transition-all duration-500 overflow-hidden">
+                    <!-- Effet de brillance au hover -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/0 via-transparent to-secondary/0 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+                    
+                    <!-- Badge prix (optionnel) -->
+                    <div class="absolute top-6 right-6 px-4 py-2 bg-primary/20 backdrop-blur-sm rounded-full text-xs font-bold text-primary">
+                        À partir de 250000 FCFA
+                    </div>
+                    
+                    <!-- Icône avec effet -->
+                    <div class="relative mb-6">
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+                        <div class="relative w-20 h-20 rounded-2xl gradient-bg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl">
+                            <i class="fas fa-shield-alt text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Contenu -->
+                    <div class="relative">
+                        <h3 class="text-2xl font-bold mb-4 group-hover:text-white transition-colors">
+                            Systèmes de Sécurité
+                        </h3>
+                        <p class="text-gray-400 leading-relaxed mb-6 line-clamp-3">
+                            Caméras, alarmes et contrôle d&#x27;accès pour protéger vos biens
+                        </p>
+                        
+                        <!-- Liste d'avantages (optionnel) -->
+                        <ul class="space-y-2 mb-6 text-sm text-gray-500">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Installation certifiée
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Garantie 2-5 ans
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Support 24/7
+                            </li>
+                        </ul>
+                        
+                        <!-- Bouton -->
+                        <a href="./services/" 
+                           aria-label="En savoir plus sur Systèmes de Sécurité"
+                           class="inline-flex items-center text-primary font-bold group/btn">
+                            <span class="mr-2">Découvrir</span>
+                            <i class="fas fa-arrow-right group-hover/btn:translate-x-2 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="group relative fade-in" style="animation-delay: calc(4 * 0.1s);">
+                <!-- Card principale -->
+                <div class="relative h-full bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm p-8 rounded-3xl border border-gray-800 hover:border-primary/50 transition-all duration-500 overflow-hidden">
+                    <!-- Effet de brillance au hover -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/0 via-transparent to-secondary/0 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+                    
+                    <!-- Badge prix (optionnel) -->
+                    <div class="absolute top-6 right-6 px-4 py-2 bg-primary/20 backdrop-blur-sm rounded-full text-xs font-bold text-primary">
+                        À partir de 50000 FCFA
+                    </div>
+                    
+                    <!-- Icône avec effet -->
+                    <div class="relative mb-6">
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+                        <div class="relative w-20 h-20 rounded-2xl gradient-bg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl">
+                            <i class="fas fa-tools text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Contenu -->
+                    <div class="relative">
+                        <h3 class="text-2xl font-bold mb-4 group-hover:text-white transition-colors">
+                            Maintenance
+                        </h3>
+                        <p class="text-gray-400 leading-relaxed mb-6 line-clamp-3">
+                            Entretien préventif et correctif de vos installations électriques
+                        </p>
+                        
+                        <!-- Liste d'avantages (optionnel) -->
+                        <ul class="space-y-2 mb-6 text-sm text-gray-500">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Installation certifiée
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Garantie 2-5 ans
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Support 24/7
+                            </li>
+                        </ul>
+                        
+                        <!-- Bouton -->
+                        <a href="./services/" 
+                           aria-label="En savoir plus sur Maintenance"
+                           class="inline-flex items-center text-primary font-bold group/btn">
+                            <span class="mr-2">Découvrir</span>
+                            <i class="fas fa-arrow-right group-hover/btn:translate-x-2 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="group relative fade-in" style="animation-delay: calc(5 * 0.1s);">
+                <!-- Card principale -->
+                <div class="relative h-full bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm p-8 rounded-3xl border border-gray-800 hover:border-primary/50 transition-all duration-500 overflow-hidden">
+                    <!-- Effet de brillance au hover -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/0 via-transparent to-secondary/0 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+                    
+                    <!-- Badge prix (optionnel) -->
+                    <div class="absolute top-6 right-6 px-4 py-2 bg-primary/20 backdrop-blur-sm rounded-full text-xs font-bold text-primary">
+                        À partir de 350000 FCFA
+                    </div>
+                    
+                    <!-- Icône avec effet -->
+                    <div class="relative mb-6">
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+                        <div class="relative w-20 h-20 rounded-2xl gradient-bg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl">
+                            <i class="fas fa-snowflake text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Contenu -->
+                    <div class="relative">
+                        <h3 class="text-2xl font-bold mb-4 group-hover:text-white transition-colors">
+                            Climatisation
+                        </h3>
+                        <p class="text-gray-400 leading-relaxed mb-6 line-clamp-3">
+                            Installation et maintenance de systèmes de climatisation performants
+                        </p>
+                        
+                        <!-- Liste d'avantages (optionnel) -->
+                        <ul class="space-y-2 mb-6 text-sm text-gray-500">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Installation certifiée
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Garantie 2-5 ans
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-2"></i>
+                                Support 24/7
+                            </li>
+                        </ul>
+                        
+                        <!-- Bouton -->
+                        <a href="./services/" 
+                           aria-label="En savoir plus sur Climatisation"
+                           class="inline-flex items-center text-primary font-bold group/btn">
+                            <span class="mr-2">Découvrir</span>
+                            <i class="fas fa-arrow-right group-hover/btn:translate-x-2 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- CTA Bas de section -->
+        <div class="text-center mt-16 fade-in">
+            <p class="text-gray-400 mb-6">Vous ne trouvez pas ce que vous cherchez ?</p>
+            <a href="./contact/" 
+               class="inline-flex items-center glass px-8 py-4 rounded-full font-bold hover:bg-white/20 transition">
+                <i class="fas fa-comment-dots mr-3"></i>
+                Parlons de votre projet
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 🎯 NOUVEAU : GALERIE AVANT/APRÈS -->
+<section aria-labelledby="gallery-title" class="py-32 bg-gradient-to-b from-black to-dark">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16 fade-in">
+            <h2 id="gallery-title" class="text-5xl md:text-6xl font-black mb-6">
+                Avant / <span class="gradient-text">Après</span>
+            </h2>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                Découvrez la transformation de nos projets
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <!-- Comparaison 1 -->
+            <div class="group glass rounded-2xl overflow-hidden hover-scale fade-in">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop" 
+                         alt="Avant rénovation électrique"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute top-4 left-4 bg-red-500 px-4 py-2 rounded-full font-bold text-sm">
+                        AVANT
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Installation vétuste</h3>
+                    <p class="text-gray-400">Câblage ancien et non conforme</p>
+                </div>
+            </div>
+
+            <div class="group glass rounded-2xl overflow-hidden hover-scale fade-in" style="animation-delay: 0.1s;">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&h=400&fit=crop" 
+                         alt="Après rénovation électrique"
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute top-4 left-4 bg-green-500 px-4 py-2 rounded-full font-bold text-sm">
+                        APRÈS
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Installation moderne</h3>
+                    <p class="text-gray-400">Système aux normes avec domotique</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section - Style Opera -->
+<section aria-labelledby="features-title" class="py-32 bg-black relative overflow-hidden">
+    <!-- Background effect -->
+    <div class="absolute top-0 left-1/2 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
+    
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <!-- Texte -->
+            <div class="fade-in">
+                <div class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-6">
+                    Innovation
+                </div>
+                <h2 id="features-title" class="text-5xl font-black mb-6 leading-tight">
+                    Technologie de pointe pour un avenir durable
+                </h2>
+                <p class="text-xl text-gray-400 mb-8">
+                    Nous combinons expertise technique et solutions écologiques pour créer des systèmes électroniques intelligents et durables.
+                </p>
+                
+                <!-- Liste de features -->
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-check text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Installation certifiée</h4>
+                            <p class="text-gray-400">Conformité garantie aux normes internationales</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-check text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Support 24/7</h4>
+                            <p class="text-gray-400">Une équipe dédiée à votre service en permanence</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-check text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Garantie étendue</h4>
+                            <p class="text-gray-400">Protection complète jusqu'à 5 ans</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="./services/" 
+                   aria-label="Découvrir toutes nos solutions"
+                   class="inline-flex items-center gradient-bg px-8 py-4 rounded-full font-bold mt-8 hover:opacity-90 transition">
+                    Découvrir nos solutions
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            
+            <!-- Image / Illustration -->
+            <div class="relative fade-in" style="animation-delay: 0.3s;">
+                <div class="relative">
+                    <!-- Cards flottantes -->
+                    <div class="glass p-6 rounded-2xl mb-4 animate-float">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-green-500 flex items-center justify-center">
+                                <i class="fas fa-leaf text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold">Énergie verte</div>
+                                <div class="text-sm text-gray-400">-65% de consommation</div>
+                            </div>
+                            <div class="ml-auto text-2xl font-bold text-green-400">↗</div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass p-6 rounded-2xl animate-float" style="animation-delay: 2s;">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-500 flex items-center justify-center">
+                                <i class="fas fa-shield-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold">Sécurité maximale</div>
+                                <div class="text-sm text-gray-400">Protection avancée</div>
+                            </div>
+                            <div class="ml-auto text-2xl font-bold text-blue-400">✓</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials / Social Proof -->
+<section aria-labelledby="testimonials-title" class="py-32 bg-gradient-to-b from-black to-dark">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-20 fade-in">
+            <h2 id="testimonials-title" class="text-5xl font-black mb-6">
+                Ils nous font <span class="gradient-text">confiance</span>
+            </h2>
+            <p class="text-xl text-gray-400">Plus de 10 000 clients satisfaits à travers la Côte d'Ivoire</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <div class="glass p-8 rounded-3xl fade-in hover-scale" style="animation-delay: calc(0 * 0.1s);">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-r from-primary to-secondary mr-4"></div>
+                    <div>
+                        <div class="font-bold">Amadou K.</div>
+                        <div class="text-sm text-gray-400">Entrepreneur</div>
+                    </div>
+                </div>
+                <div class="text-yellow-400 mb-4">
+                    
+                    <i class="fas fa-star"></i>
+                    
+                    <i class="fas fa-star"></i>
+                    
+                    <i class="fas fa-star"></i>
+                    
+                    <i class="fas fa-star"></i>
+                    
+                    <i class="fas fa-star"></i>
+                    
+                </div>
+                <p class="text-gray-300 leading-relaxed">
+                    "Installation impeccable de notre système domotique. L&#x27;équipe est professionnelle et réactive. Je recommande vivement !"
+                </p>
+            </div>
+            
+            <div class="glass p-8 rounded-3xl fade-in hover-scale" style="animation-delay: calc(1 * 0.1s);">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-r from-secondary to-primary mr-4"></div>
+                    <div>
+                        <div class="font-bold">Marie D.</div>
+                        <div class="text-sm text-gray-400">Directrice d&#x27;hôtel</div>
+                    </div>
+                </div>
+                <div class="text-yellow-400 mb-4">
+                    
+                    <i class="fas fa-star"></i>
+                    
+                    <i class="fas fa-star"></i>
+                    
+                    <i class="fas fa-star"></i>
+                    
+                    <i class="fas fa-star"></i>
+                    
+                    <i class="fas fa-star"></i>
+                    
+                </div>
+                <p class="text-gray-300 leading-relaxed">
+                    "Grâce à TechFlow, notre hôtel est maintenant équipé d&#x27;un système solaire qui réduit nos coûts de 70%. Excellent travail !"
+                </p>
+            </div>
+            
+            <div class="glass p-8 rounded-3xl fade-in hover-scale" style="animation-delay: calc(2 * 0.1s);">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-r from-primary to-secondary mr-4"></div>
+                    <div>
+                        <div class="font-bold">Koffi S.</div>
+                        <div class="text-sm text-gray-400">Architecte</div>
+                    </div>
+                </div>
+                <div class="text-yellow-400 mb-4">
+                    
+                    <i class="fas fa-star"></i>
+                    
+                    <i class="fas fa-star"></i>
+                    
+                    <i class="fas fa-star"></i>
+                    
+                    <i class="fas fa-star"></i>
+                    
+                    <i class="fas fa-star"></i>
+                    
+                </div>
+                <p class="text-gray-300 leading-relaxed">
+                    "Partenaire de confiance pour tous mes projets. Qualité, ponctualité et expertise au rendez-vous. Que demander de plus ?"
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- CTA Final - Style Opera -->
+<section aria-labelledby="cta-title" class="py-32 relative overflow-hidden">
+    <div class="absolute inset-0 gradient-bg opacity-20"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/30 via-transparent to-transparent"></div>
+    
+    <div class="container mx-auto px-6 text-center relative z-10">
+        <div class="max-w-4xl mx-auto fade-in">
+            <h2 id="cta-title" class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                Prêt à transformer votre espace ?
+            </h2>
+            <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+                Rejoignez des milliers de clients satisfaits et bénéficiez d'une consultation gratuite avec nos experts.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="./contact/" 
+                   aria-label="Prendre rendez-vous avec nos experts"
+                   class="gradient-bg px-10 py-5 rounded-full font-bold text-lg hover:opacity-90 transition transform hover:scale-105 flex items-center justify-center">
+                    <i class="fas fa-calendar-check mr-3"></i>
+                    Prendre rendez-vous
+                </a>
+                <a href="tel:+2250142507750" 
+                   aria-label="Appeler TechFlow au +225 01 42 50 77 50"
+                   class="glass px-10 py-5 rounded-full font-bold text-lg hover:bg-white/20 transition flex items-center justify-center">
+                    <i class="fas fa-phone mr-3"></i>
+                    +225 0142507750
+                </a>
+            </div>
+            
+            <p class="text-gray-500 mt-8 text-sm">
+                <i class="fas fa-shield-alt mr-2"></i>
+                Devis gratuit • Sans engagement • Réponse en 24h
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 🎯 JAVASCRIPT DU CARROUSEL -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Sélection des éléments
+    const slides = document.querySelectorAll('.project-slide');
+    const dots = document.querySelectorAll('.carousel-dots .dot');
+    const prevBtn = document.querySelector('.carousel-prev');
+    const nextBtn = document.querySelector('.carousel-next');
+    
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+    let autoplayTimer;
+
+    // Fonction pour afficher un slide
+    function showSlide(index) {
+        // Validation de l'index
+        if (index < 0) {
+            currentSlide = totalSlides - 1;
+        } else if (index >= totalSlides) {
+            currentSlide = 0;
+        } else {
+            currentSlide = index;
+        }
+
+        // Mise à jour des slides
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === currentSlide) {
+                slide.classList.add('active');
+            }
+        });
+
+        // Mise à jour des dots
+        dots.forEach((dot, i) => {
+            dot.classList.remove('active');
+            if (i === currentSlide) {
+                dot.classList.add('active');
+            }
+        });
+    }
+
+    // Navigation suivant
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    // Navigation précédent
+    function prevSlide() {
+        showSlide(currentSlide - 1);
+    }
+
+    // Autoplay
+    function startAutoplay() {
+        autoplayTimer = setInterval(nextSlide, 5000);
+    }
+
+    function stopAutoplay() {
+        clearInterval(autoplayTimer);
+    }
+
+    // Event listeners pour les boutons
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            stopAutoplay();
+            startAutoplay();
+        });
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            stopAutoplay();
+            startAutoplay();
+        });
+    }
+
+    // Event listeners pour les dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            showSlide(index);
+            stopAutoplay();
+            startAutoplay();
+        });
+    });
+
+    // Pause au survol
+    const carousel = document.querySelector('.projects-carousel');
+    if (carousel) {
+        carousel.addEventListener('mouseenter', stopAutoplay);
+        carousel.addEventListener('mouseleave', startAutoplay);
+    }
+
+    // Navigation au clavier
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            prevSlide();
+            stopAutoplay();
+            startAutoplay();
+        } else if (e.key === 'ArrowRight') {
+            nextSlide();
+            stopAutoplay();
+            startAutoplay();
+        }
+    });
+
+    // Démarrer l'autoplay
+    startAutoplay();
+
+    // Initialiser le premier slide
+    showSlide(0);
+
+    console.log('✅ Carrousel initialisé avec succès!');
+});
+
+
+
+
+
+    // Carrousel - Version corrigée
+    const track = document.getElementById('carousel-track');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dot');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    let autoplayInterval;
+
+    function updateCarousel(index) {
+        // Retirer la classe active de tous les slides
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+            slide.style.opacity = '0';
+            slide.style.zIndex = '0';
+        });
+        
+        // Ajouter la classe active au slide actuel
+        slides[index].classList.add('active');
+        slides[index].style.opacity = '1';
+        slides[index].style.zIndex = '1';
+        
+        currentIndex = index;
+        
+        // Mise à jour des indicateurs
+        dots.forEach((dot, i) => {
+            if (i === currentIndex) {
+                dot.classList.add('bg-white');
+                dot.classList.remove('bg-white/50');
+            } else {
+                dot.classList.remove('bg-white');
+                dot.classList.add('bg-white/50');
+            }
+        });
+    }
+
+    function nextSlide() {
+        const nextIndex = (currentIndex + 1) % totalSlides;
+        updateCarousel(nextIndex);
+    }
+
+    function prevSlide() {
+        const prevIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateCarousel(prevIndex);
+    }
+
+    // Autoplay
+    function startAutoplay() {
+        autoplayInterval = setInterval(nextSlide, 5000);
+    }
+
+    function stopAutoplay() {
+        clearInterval(autoplayInterval);
+    }
+
+    // Event listeners
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        stopAutoplay();
+        startAutoplay();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        stopAutoplay();
+        startAutoplay();
+    });
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            updateCarousel(index);
+            stopAutoplay();
+            startAutoplay();
+        });
+    });
+
+    // Pause au survol
+    const carousel = document.getElementById('carousel');
+    carousel.addEventListener('mouseenter', stopAutoplay);
+    carousel.addEventListener('mouseleave', startAutoplay);
+
+    // Initialiser
+    updateCarousel(0);
+    startAutoplay();
+</script>
+
+    </main>
+
+    <!-- Footer Premium -->
+    <footer class="bg-black border-t border-gray-900 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-5 gap-12 mb-12">
+                <!-- Colonne Logo -->
+<div class="md:col-span-2">
+    <div class="flex items-center space-x-3 mb-6">
+        <img src="./static/images/logo.svg" alt="TechFlow Logo" class="w-12 h-12">
+        <span class="text-2xl font-bold">TechFlow</span>
+    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Solutions électroniques innovantes pour un monde connecté. 
+                        Excellence, innovation et durabilité.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" aria-label="Suivez-nous sur Facebook" class="w-10 h-10 rounded-full bg-gray-900 hover:bg-primary transition flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Suivez-nous sur Twitter" class="w-10 h-10 rounded-full bg-gray-900 hover:bg-primary transition flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aka-m-bollo-60a1b1340" aria-label="Suivez-nous sur LinkedIn" class="w-10 h-10 rounded-full bg-gray-900 hover:bg-primary transition flex items-center justify-center">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" aria-label="Suivez-nous sur Instagram" class="w-10 h-10 rounded-full bg-gray-900 hover:bg-primary transition flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Services</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="./services/" class="hover:text-white transition">Installation</a></li>
+                        <li><a href="./services/" class="hover:text-white transition">Maintenance</a></li>
+                        <li><a href="./services/" class="hover:text-white transition">Domotique</a></li>
+                        <li><a href="./services/" class="hover:text-white transition">Solaire</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Entreprise -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Entreprise</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="./about/" class="hover:text-white transition">À propos</a></li>
+                        <li><a href="./careers/" class="hover:text-white transition">Carrières</a></li>
+                        <li><a href="./blog/" class="hover:text-white transition">Blog</a></li>
+                        <li><a href="./press/" class="hover:text-white transition">Presse</a></li>
+
+                    </ul>
+                </div>
+                
+                <!-- Support -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Support</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="./contact/" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="./faq/" class="hover:text-white transition">FAQ</a></li>
+                        <li><a href="./documentation/" class="hover:text-white transition">Documentation</a></li>
+                        <li><a href="./warranty/" class="hover:text-white transition">Garantie</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom -->
+            <div class="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p class="text-gray-500 text-sm">
+                    © 2026 TechFlow Electronics. Tous droits réservés.
+                </p>
+                <div class="flex space-x-6 text-sm text-gray-500">
+                    <a href="./legal/" class="hover:text-white transition">Mentions légales</a>
+                    <a href="./privacy/" class="hover:text-white transition">Confidentialité</a>
+                    <a href="./cookies/" class="hover:text-white transition">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // ===== PAGE LOADER =====
+    window.addEventListener('load', () => {
+        const loader = document.getElementById('page-loader');
+        setTimeout(() => {
+            loader.classList.add('hidden');
+        }, 2000);
+    });
+
+    // ===== DARK/LIGHT MODE =====
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+    const html = document.documentElement;
+    
+    // Charger le thème sauvegardé
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+    
+    // Toggle desktop
+    if (themeToggle) {
+        themeToggle.addEventListener('click', toggleTheme);
+    }
+    
+    // Toggle mobile
+    if (themeToggleMobile) {
+        themeToggleMobile.addEventListener('click', toggleTheme);
+    }
+    
+    function toggleTheme() {
+        const currentTheme = html.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        html.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(newTheme);
+        
+        // Log pour debug
+        console.log('Thème changé:', newTheme);
+    }
+    
+    function updateThemeIcon(theme) {
+        const icons = document.querySelectorAll('.theme-switch-slider i');
+        icons.forEach(icon => {
+            if (theme === 'dark') {
+                icon.className = 'fas fa-moon';
+            } else {
+                icon.className = 'fas fa-sun';
+            }
+        });
+    }
+
+    // ===== NAVBAR SCROLL EFFECT =====
+    window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('navbar-scrolled');
+        } else {
+            navbar.classList.remove('navbar-scrolled');
+        }
+    });
+
+    // ===== MENU MOBILE TOGGLE =====
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuIcon = mobileMenuButton.querySelector('i');
+    
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        
+        if (mobileMenu.classList.contains('hidden')) {
+            mobileMenuIcon.classList.remove('fa-times');
+            mobileMenuIcon.classList.add('fa-bars');
+        } else {
+            mobileMenuIcon.classList.remove('fa-bars');
+            mobileMenuIcon.classList.add('fa-times');
+        }
+    });
+    
+    // Fermer le menu au clic sur un lien
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenuIcon.classList.remove('fa-times');
+            mobileMenuIcon.classList.add('fa-bars');
+        });
+    });
+
+    // ===== FADE IN ANIMATION =====
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+
+    // ===== SMOOTH SCROLL =====
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+</script>
+</body>
+</html>
