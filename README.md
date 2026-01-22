@@ -4,7 +4,7 @@ Site vitrine statique pour TechFlow Electronics, entreprise spécialisée dans l
 
 ## 🌐 Démo en ligne
 
-[Voir le site](https://votre-username.github.io/techflow-static)
+[Voir le site](https://wthomasss06-stack.github.io/1/)
 
 ## 🛠️ Technologies
 
@@ -34,13 +34,7 @@ Site vitrine statique pour TechFlow Electronics, entreprise spécialisée dans l
 - Documentation
 - Et plus...
 
-## 🚀 Déploiement local
-```bash
-# Ouvrir directement index.html dans le navigateur
-# OU utiliser un serveur local :
-python -m http.server 8080
-# Puis aller sur http://localhost:8080
-```
+
 
 ## 📦 Structure du projet
 ```
@@ -60,7 +54,7 @@ techflow-static/
 ├── cookies.html                  # Cookies
 │
 ├── css/
-│   └── style.css                 # CSS personnalisé (optionnel)
+│   └── style.css                 # CSS personnalisé 
 │
 ├── js/
 │   └── main.js                   # JavaScript principal
@@ -69,16 +63,16 @@ techflow-static/
 │   ├── logo.svg
 │   ├── favicon.svg
 │   ├── favicon.ico
-│   └── apple-touch-icon.png
+│   
 │
 ├── .nojekyll                     # Important pour GitHub Pages
 ├── README.md                     # Documentation du projet
-└── CNAME                         # Pour domaine personnalisé (optionnel)
+
 ```
 
 ## 👨‍💻 Auteur
 
-TechFlow Electronics - 2026
+M'Bollo Aka - 2026
 
 ## 📄 Licence
 
